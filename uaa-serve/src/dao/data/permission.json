@@ -1,0 +1,10 @@
+[
+  { "id": 1, "parent": 0, "authority": "AUTH", "displayName": "权限管理", "icon": "solid.user-lock", "uri": "/authorize", "enabled": 1 },
+  { "id": 2, "parent": 1, "authority": "AUTH_USER", "displayName": "用户", "icon": "solid.user", "uri": "/authorize/user", "enabled": 1 },
+  { "id": 3, "parent": 2, "authority": "AUTH_USER_LIST", "displayName": "用户列表", "icon": "", "uri": "/authorize/user/getUsers", "enabled": 1 },
+  { "id": 4, "parent": 1, "authority": "AUTH_PERMISSION", "displayName": "权限", "icon": "solid.bars", "uri": "/authorize/permission", "enabled": 1 },
+  { "id": 5, "parent": 4, "authority": "AUTH_PERMISSION_LIST", "displayName": "权限列表", "icon": "", "uri": "/authorize/permission/getPermissions", "enabled": 1 },
+  { "id": 6, "parent": 4, "authority": "AUTH_PERMISSION_CREATE", "displayName": "创建权限", "icon": "", "uri": "/authorize/permission/create", "enabled": 1 },
+  { "id": 7, "parent": 4, "authority": "AUTH_PERMISSION_UPDATE", "displayName": "更新权限", "icon": "", "uri": "/authorize/permission/update/:id", "enabled": 1 },
+  { "id": 8, "parent": 0, "authority": "ACCESS_LOG_DETAIL", "displayName": "访问日志", "icon": "solid.book", "uri": "/access/log", "enabled": 1 }
+]

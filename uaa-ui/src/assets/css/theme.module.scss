@@ -1,0 +1,84 @@
+$menuBackgroundColor: #545c64;
+$menuTextColor: #fff;
+$activeMenuTextColor: #ffd04b;
+$activeTextColor: #409eff;
+$navHeaderHeight: 55px;
+$navSideWidth: 200px;
+$navSideCollapseWidth: 64px;
+$navSideRightBorder: solid 1px #e6e6e6;
+$containerBackground: #f0f2f5;
+$successColor: #18bc9c;
+$successActiveColor: #128f76;
+$successHoverColor: #60d1bb;
+
+.fa-icon {
+  display: flex;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 24px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.el-input.default-disabled {
+  &.is-disabled {
+    .el-input__inner {
+      background-color: transparent;
+      cursor: default;
+    }
+  }
+}
+
+.el-button.el-button--success {
+  background-color: $successColor;
+  border-color: $successColor;
+  &:hover {
+    background-color: $successHoverColor;
+    border-color: $successHoverColor;
+    &:active {
+      background-color: $successActiveColor;
+      border-color: $successActiveColor;
+    }
+  }
+  &:focus {
+    background-color: $successHoverColor;
+    border-color: $successHoverColor;
+  }
+}
+
+.form-item.compositional {
+  .form-control {
+    .el-input {
+      .el-input__inner {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+    .el-button-group {
+      display: flex;
+    }
+    button:nth-of-type(1) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}
+
+.account-binder-dialog {
+  width: 100%;
+  max-width: 375px;
+}
+
+:export {
+  menuBackgroundColor: $menuBackgroundColor;
+  menuTextColor: $menuTextColor;
+  activeMenuTextColor: $activeMenuTextColor;
+  activeTextColor: $activeTextColor;
+  navHeaderHeight: $navHeaderHeight;
+  navSideWidth: $navSideWidth;
+  navSideCollapseWidth: $navSideCollapseWidth;
+  navSideRightBorder: $navSideRightBorder;
+  containerBackground: $containerBackground;
+  successColor: $successColor;
+  successActiveColor: $successActiveColor;
+}
